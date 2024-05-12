@@ -20,10 +20,10 @@ export default function Home() {
             />
           </div>
           <div className='mb-8 leading-tight bg-white shadow-md px-8 py-8 pb-12'>
-            <p className='text-[80px] xl:text-[60px] 2xl:text-[90px] font-light text-gray-900'>
+            <p className='text-[60px] xl:text-[60px] 2xl:text-[90px] font-light text-gray-900'>
               Hey There
             </p>
-            <p className='text-[70px] xl:text-[70px] 2xl:text-[120px] leading-tight font-medium'>
+            <p className='text-[60px] xl:text-[70px] 2xl:text-[120px] leading-tight font-medium'>
               I'm Darshan
             </p>
             <p className='text-xl xl:text-lg 3xl:text-xl text-gray-500 mt-4'>
@@ -128,7 +128,9 @@ export default function Home() {
                   target='_'
                   className='relative inline-block h-1/3 w-full border-2 border-orange-100'
                 >
-                  <img
+                  <Image
+                    width={80}
+                    height={80}
                     src={image}
                     className='h-full object-cover w-full'
                     alt='project'
@@ -142,7 +144,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-white h-[300px] my-8 xl:my-0'>
+      <section className='bg-white h-[300px] my-8 p-4 md:p-0 xl:my-0'>
         <div className='flex flex-col space-y-4 text-blue-800 justify-center h-full max-w-[80vw] md:max-w-[60vw] mx-auto'>
           <p className='text-2xl'>
             "Once there is a distance between you and your
