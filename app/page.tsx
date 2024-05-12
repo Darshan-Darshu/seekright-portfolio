@@ -1,113 +1,185 @@
+import Products from "@/components/Products";
+import Skills from "@/components/Skills";
+import { data } from "@/projectData/data";
+import { Github, GithubIcon, Linkedin } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <main className=''>
+      <section className='flex 3xl:h-[calc(80vh-80px)]'>
+        <div className='flex-1 flex flex-col xl:flex-row items-center space-y-12 xl:space-y-0 xl:space-x-12 px-4 pt-8 xl:py-8 xl:px-6 2xl:px-10 3xl:px-20'>
+          <div className='h-[400px] min-w-[400px] md:min-w-[550px] md:h-[550px] lg:min-w-[650px] lg:h-[650px] xl:h-[450px] xl:min-w-[450px] 3xl:min-w-[600px] 3xl:h-[600px] rounded-full border-[20px] drop-shadow-xl border-orange-400'>
+            <img
+              src='/assest/Darshan.png'
+              alt=''
+              className='w-full h-full rounded-full object-cover object-top'
             />
-          </a>
+          </div>
+          <div className='mb-8 leading-tight bg-white shadow-md px-8 py-8 pb-12'>
+            <p className='text-[80px] xl:text-[60px] 2xl:text-[90px] font-light text-gray-900'>
+              Hey There
+            </p>
+            <p className='text-[70px] xl:text-[70px] 2xl:text-[120px] leading-tight font-medium'>
+              I'm Darshan
+            </p>
+            <p className='text-xl xl:text-lg 3xl:text-xl text-gray-500 mt-4'>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsam qui cumque, ipsa sed
+              voluptatem dolores voluptate deserunt
+              assumenda perferendis dolorum accusantium? Vel
+              dicta explicabo ab commodi pariatur recusandae
+              minus tenetur.
+            </p>
+
+            <div className='flex items-center space-x-4 mt-2 lg:mt-4 3xl:mt-8'>
+              <Link
+                href='https://www.linkedin.com/in/dharshankumaras/'
+                target='_'
+              >
+                <Linkedin className='bg-gray-800 text-white rounded-md h-7 w-7 p-1 cursor-pointer' />
+              </Link>
+
+              <Link
+                href='https://github.com/Darshan-Darshu'
+                target='_'
+              >
+                <Github className='bg-gray-800 text-white rounded-full h-7 w-7 p-1 cursor-pointer' />
+              </Link>
+            </div>
+
+            <div className='flex flex-col mt-2 lg:mt-4 3xl:mt-6 space-y-2'>
+              <p className='text-xl text-gray-700 xl:mt-1 3xl:mt-4'>
+                Tech Stack
+              </p>
+
+              <div className='grid grid-cols-5 lg:grid-cols-8 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-8 gap-2 2xl:gap-y-5 items-center'>
+                <img
+                  src='/assest/html.png'
+                  alt='html-logo'
+                  width={60}
+                  height={60}
+                  className='w-12 h-12'
+                />
+                <img
+                  src='/assest/css.png'
+                  alt='css-logo'
+                  width={60}
+                  height={60}
+                  className='w-16 h-16 2xl:-ml-2'
+                />
+                <img
+                  src='/assest/JavaScript-logo.png'
+                  alt='html-logo'
+                  width={60}
+                  height={60}
+                  className='w-12 h-12 xl:ml-2'
+                />
+                <img
+                  src='/assest/React-icon.png'
+                  alt='html-logo'
+                  width={60}
+                  height={60}
+                  className='w-12 h-12 xl:ml-2'
+                />
+                <img
+                  src='/assest/nodejs.png'
+                  alt='html-logo'
+                  width={60}
+                  height={60}
+                  className='w-20 h-12 xl:ml-2 2xl:-ml-2'
+                />
+                <img
+                  src='/assest/nextjs.png'
+                  alt='html-logo'
+                  width={60}
+                  height={60}
+                  className='w-20 h-12 2xl:ml-4'
+                />
+                <img
+                  src='/assest/tailwind.png'
+                  alt='html-logo'
+                  width={60}
+                  height={60}
+                  className='w-24 h-20 xl:16 2xl:-ml-2'
+                />
+                <img
+                  src='/assest/mongo.png'
+                  alt='html-logo'
+                  width={60}
+                  height={60}
+                  className='w-20 h-16 2xl:-ml-2 '
+                />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        <div className='hidden xl:block bg-white w-[25%] max-h-full overflow-hidden'>
+          <div className='w-full h-full'>
+            {data
+              .slice(0, 3)
+              .map(({ id, image, name, url }) => (
+                <Link
+                  href={url}
+                  key={id}
+                  target='_'
+                  className='relative inline-block h-1/3 w-full border-2 border-orange-100'
+                >
+                  <img
+                    src={image}
+                    className='h-full object-cover w-full'
+                    alt='project'
+                  />
+                  <p className='flex items-center px-4 uppercase text-white font-semibold absolute bottom-0 project-bg h-16 w-full'>
+                    {name}
+                  </p>
+                </Link>
+              ))}
+          </div>
+        </div>
+      </section>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+      <section className='bg-white h-[300px] my-8 xl:my-0'>
+        <div className='flex flex-col space-y-4 text-blue-800 justify-center h-full max-w-[80vw] md:max-w-[60vw] mx-auto'>
+          <p className='text-2xl'>
+            "Once there is a distance between you and your
+            thought process, a new freedom is born. With
+            this freedom, a new preception arises"
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className='text-2xl'>
+            "Prayer is when you talk to god, mediation is
+            when god talks to you"
           </p>
-        </a>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <section>
+        <Products />
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+      <section className='award-bg h-[400px] mt-10 md:mt-20 ld:mt-40 pt-10'>
+        <h1 className='text-4xl text-white text-center'>
+          Awards
+        </h1>
+
+        <div className='flex flex-col w-full items-center text-xl space-y-2 mt-10 text-white'>
+          <p>MERN Batch Topper in Zensar Technology</p>
+          <p>
+            Hackathon runner's in Zensar Technology -
+            CLADETHON
           </p>
-        </a>
-      </div>
+          <p>Hackathon winner in UVCE college - CODEFURY</p>
+          <p>
+            Build a seating booking for Zensar JP nagar
+            office
+          </p>
+          <p>
+            Build a seating booking for Zensar chennai
+            office
+          </p>
+        </div>
+      </section>
     </main>
   );
 }

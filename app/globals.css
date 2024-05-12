@@ -2,32 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
+.header-bg {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(70, 70, 70, 1) 100%
+  );
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.project-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(26, 52, 126, 1) 0%,
+    rgba(26, 52, 126, 0) 100%
+  );
+}
+
+.award-bg {
+  padding: 50px 0px;
+  background-image: url(https://seekright.com/new/images/awards.png);
+  background-color: #5d5d5d;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
