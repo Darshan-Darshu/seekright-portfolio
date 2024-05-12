@@ -7,6 +7,7 @@ const nextConfig = {
         hostname: "seekright.com",
       },
     ],
+    unoptimized: true,
   },
 };
 

@@ -11,7 +11,9 @@ export default function Home() {
       <section className='flex 3xl:h-[calc(80vh-80px)]'>
         <div className='flex-1 flex flex-col xl:flex-row items-center space-y-12 xl:space-y-0 xl:space-x-12 px-4 pt-8 xl:py-8 xl:px-6 2xl:px-10 3xl:px-20'>
           <div className='h-[400px] min-w-[400px] md:min-w-[550px] md:h-[550px] lg:min-w-[650px] lg:h-[650px] xl:h-[450px] xl:min-w-[450px] 3xl:min-w-[600px] 3xl:h-[600px] rounded-full border-[20px] drop-shadow-xl border-orange-400'>
-            <img
+            <Image
+              width={80}
+              height={80}
               src='/assest/Darshan.png'
               alt=''
               className='w-full h-full rounded-full object-cover object-top'
@@ -55,56 +57,56 @@ export default function Home() {
               </p>
 
               <div className='grid grid-cols-5 lg:grid-cols-8 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-8 gap-2 2xl:gap-y-5 items-center'>
-                <img
+                <Image
                   src='/assest/html.png'
                   alt='html-logo'
                   width={60}
                   height={60}
                   className='w-12 h-12'
                 />
-                <img
+                <Image
                   src='/assest/css.png'
                   alt='css-logo'
                   width={60}
                   height={60}
                   className='w-16 h-16 2xl:-ml-2'
                 />
-                <img
+                <Image
                   src='/assest/JavaScript-logo.png'
                   alt='html-logo'
                   width={60}
                   height={60}
                   className='w-12 h-12 xl:ml-2'
                 />
-                <img
+                <Image
                   src='/assest/React-icon.png'
                   alt='html-logo'
                   width={60}
                   height={60}
                   className='w-12 h-12 xl:ml-2'
                 />
-                <img
+                <Image
                   src='/assest/nodejs.png'
                   alt='html-logo'
                   width={60}
                   height={60}
                   className='w-20 h-12 xl:ml-2 2xl:-ml-2'
                 />
-                <img
+                <Image
                   src='/assest/nextjs.png'
                   alt='html-logo'
                   width={60}
                   height={60}
                   className='w-20 h-12 2xl:ml-4'
                 />
-                <img
+                <Image
                   src='/assest/tailwind.png'
                   alt='html-logo'
                   width={60}
                   height={60}
                   className='w-24 h-20 xl:16 2xl:-ml-2'
                 />
-                <img
+                <Image
                   src='/assest/mongo.png'
                   alt='html-logo'
                   width={60}
