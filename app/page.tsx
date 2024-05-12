@@ -27,12 +27,10 @@ export default function Home() {
               I'm Darshan
             </p>
             <p className='text-xl xl:text-lg 3xl:text-xl text-gray-500 mt-4'>
-              Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Ipsam qui cumque, ipsa sed
-              voluptatem dolores voluptate deserunt
-              assumenda perferendis dolorum accusantium? Vel
-              dicta explicabo ab commodi pariatur recusandae
-              minus tenetur.
+              Experienced full-stack developer proficient in
+              HTML, CSS, JS, REACT, NEXTJS and etc.
+              Passionate about creating scalable and
+              user-friendly web applications
             </p>
 
             <div className='flex items-center space-x-4 mt-2 lg:mt-4 3xl:mt-8'>
@@ -144,8 +142,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-white h-[300px] my-8 p-4 md:p-0 xl:my-0'>
-        <div className='flex flex-col space-y-4 text-blue-800 justify-center h-full max-w-[80vw] md:max-w-[60vw] mx-auto'>
+      <section className='bg-white h-[300px] my-8 xl:my-0'>
+        <div className='flex flex-col space-y-4 text-blue-800 justify-center h-full p-4 md:p-0 max-w-[80vw] md:max-w-[60vw] mx-auto'>
           <p className='text-2xl'>
             "Once there is a distance between you and your
             thought process, a new freedom is born. With
